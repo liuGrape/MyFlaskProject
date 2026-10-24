@@ -8,4 +8,4 @@ response = requests.get('https://github.com/liuGrape', headers=Headers)
 
 soup = BeautifulSoup(response.content, 'html.parser')
 
-print(soup.prettify())
+print(soup.find_all("div"))
